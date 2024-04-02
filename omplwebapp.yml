@@ -12,7 +12,7 @@ services:
     entrypoint: ["uwsgi", "--ini", "/usr/share/ompl/webapp/wsgi.ini"]
     init: true
     ports:
-      - "5000:5000"
+      - "5001:5000"
     volumes:
       - benchmark-data:/tmp
     depends_on:
